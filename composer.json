@@ -1,28 +1,33 @@
 {
-    "name": "pantheon-systems/example-drops-8-composer",
-    "description": "Install drops-8 with Composer on Pantheon.",
+    "name": "jasonawant/wantssailing",
+    "description": "Wants Sailing based on pantheon-systems/example-drops-8-composer.",
     "type": "project",
     "license": "MIT",
     "repositories": [
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
         "php": ">=7.0.8",
+        "acquia/lightning": "~4.0",
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
-        "drupal/core-composer-scaffold": "^8.8.1",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
         "drupal/console": "^1",
+        "drupal/core-composer-scaffold": "^8.8.1",
+        "drupal/core-recommended": "^8.8",
         "drush-ops/behat-drush-endpoint": "^9.3",
         "drush/drush": "~8.3",
+        "pantheon-systems/drupal-integrations": "^8",
         "pantheon-systems/quicksilver-pushback": "^2",
         "rvtraveller/qs-composer-installer": "^1.1",
-        "drupal/core-recommended": "^8.8",
-        "pantheon-systems/drupal-integrations": "^8",
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
@@ -45,7 +50,7 @@
     "conflict": {
             "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
         "classmap": [
